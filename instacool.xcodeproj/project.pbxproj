@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13C249D3153E957623084551 /* Pods_instacool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8ACCC6F60E254CA1DBA0B8 /* Pods_instacool.framework */; };
 		2CFBE74B1C73EAF40073A404 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBE74A1C73EAF40073A404 /* AppDelegate.swift */; };
 		2CFBE74D1C73EAF40073A404 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBE74C1C73EAF40073A404 /* ViewController.swift */; };
 		2CFBE7501C73EAF40073A404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFBE74E1C73EAF40073A404 /* Main.storyboard */; };
 		2CFBE7521C73EAF40073A404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CFBE7511C73EAF40073A404 /* Assets.xcassets */; };
 		2CFBE7551C73EAF40073A404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFBE7531C73EAF40073A404 /* LaunchScreen.storyboard */; };
+		2CFBE75D1C73F0320073A404 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBE75C1C73F0320073A404 /* LoginViewController.swift */; };
+		2CFBE75F1C73F8EA0073A404 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBE75E1C73F8EA0073A404 /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A8ACCC6F60E254CA1DBA0B8 /* Pods_instacool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instacool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFBE7471C73EAF40073A404 /* instacool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instacool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFBE74A1C73EAF40073A404 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CFBE74C1C73EAF40073A404 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		2CFBE7511C73EAF40073A404 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CFBE7541C73EAF40073A404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CFBE7561C73EAF40073A404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CFBE75C1C73F0320073A404 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2CFBE75E1C73F8EA0073A404 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		B04C85C38B616186F0A64CA4 /* Pods-instacool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instacool.release.xcconfig"; path = "Pods/Target Support Files/Pods-instacool/Pods-instacool.release.xcconfig"; sourceTree = "<group>"; };
+		E8983D0349EA63EF9BD5D130 /* Pods-instacool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instacool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instacool/Pods-instacool.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C249D3153E957623084551 /* Pods_instacool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				2CFBE7491C73EAF40073A404 /* instacool */,
 				2CFBE7481C73EAF40073A404 /* Products */,
+				4BC15F7ED3A25AD800FFABB5 /* Pods */,
+				E1518E771A7425E9ACEDB432 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +65,41 @@
 		2CFBE7491C73EAF40073A404 /* instacool */ = {
 			isa = PBXGroup;
 			children = (
+				2CFBE7601C73FA150073A404 /* View Controller */,
 				2CFBE74A1C73EAF40073A404 /* AppDelegate.swift */,
 				2CFBE74C1C73EAF40073A404 /* ViewController.swift */,
 				2CFBE74E1C73EAF40073A404 /* Main.storyboard */,
 				2CFBE7511C73EAF40073A404 /* Assets.xcassets */,
 				2CFBE7531C73EAF40073A404 /* LaunchScreen.storyboard */,
 				2CFBE7561C73EAF40073A404 /* Info.plist */,
+				2CFBE75E1C73F8EA0073A404 /* HomePageViewController.swift */,
 			);
 			path = instacool;
+			sourceTree = "<group>";
+		};
+		2CFBE7601C73FA150073A404 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CFBE75C1C73F0320073A404 /* LoginViewController.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		4BC15F7ED3A25AD800FFABB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8983D0349EA63EF9BD5D130 /* Pods-instacool.debug.xcconfig */,
+				B04C85C38B616186F0A64CA4 /* Pods-instacool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1518E771A7425E9ACEDB432 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8ACCC6F60E254CA1DBA0B8 /* Pods_instacool.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CFBE7591C73EAF40073A404 /* Build configuration list for PBXNativeTarget "instacool" */;
 			buildPhases = (
+				7F42192B0904518C4EB86871 /* Check Pods Manifest.lock */,
 				2CFBE7431C73EAF40073A404 /* Sources */,
 				2CFBE7441C73EAF40073A404 /* Frameworks */,
 				2CFBE7451C73EAF40073A404 /* Resources */,
+				B582A51544B3765646D98D24 /* Embed Pods Frameworks */,
+				D33F3255A733789F7E6A1533 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,11 +171,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F42192B0904518C4EB86871 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B582A51544B3765646D98D24 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-instacool/Pods-instacool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D33F3255A733789F7E6A1533 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-instacool/Pods-instacool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2CFBE7431C73EAF40073A404 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFBE75F1C73F8EA0073A404 /* HomePageViewController.swift in Sources */,
+				2CFBE75D1C73F0320073A404 /* LoginViewController.swift in Sources */,
 				2CFBE74D1C73EAF40073A404 /* ViewController.swift in Sources */,
 				2CFBE74B1C73EAF40073A404 /* AppDelegate.swift in Sources */,
 			);
@@ -247,6 +338,7 @@
 		};
 		2CFBE75A1C73EAF40073A404 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8983D0349EA63EF9BD5D130 /* Pods-instacool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = instacool/Info.plist;
@@ -258,6 +350,7 @@
 		};
 		2CFBE75B1C73EAF40073A404 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B04C85C38B616186F0A64CA4 /* Pods-instacool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = instacool/Info.plist;
@@ -286,6 +379,7 @@
 				2CFBE75B1C73EAF40073A404 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,15 +7,48 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var storyboard = UIStoryboard(name: "Main", bundle: nil)
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        Parse.initializeWithConfiguration(
+            ParseClientConfiguration(block: { (configuration:ParseMutableClientConfiguration) -> Void in
+                configuration.applicationId = "instacool"
+                configuration.clientKey = "aksdjkfhjaksdfjh198347382974*&^&*GHGHJF"
+                configuration.server = "https://instaclass.herokuapp.com/parse"
+            })
+        )
+        
+        // setup parse keys
+        Parse.setApplicationId("instacool", clientKey: "aksdjkfhjaksdfjh198347382974*&^&*GHGHJF")
+        
+        // check if user is logged in.
+        if PFUser.currentUser() != nil {
+            // if there is a logged in user then load the home view controller
+            var vc = storyboard.instantiateViewControllerWithIdentifier("HomePageController") as UIViewController
+            window?.rootViewController = vc
+            
+        }
+        
+        
+//        
+//        if User.currentUser != nil {
+//            // Go to the logged in screen
+//            print("current user detected : \(User.currentUser?.name)")
+//            
+//            var vc = storyboard.instantiateViewControllerWithIdentifier("TweetsViewController") as UIViewController
+//            
+//            window?.rootViewController = vc
+//        }
+//
+
+        
         return true
     }
 
