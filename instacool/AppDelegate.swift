@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // check if user is logged in.
         if PFUser.currentUser() != nil {
             // if there is a logged in user then load the home view controller
-            var vc = storyboard.instantiateViewControllerWithIdentifier("HomePageController") as UIViewController
+            let vc = storyboard.instantiateViewControllerWithIdentifier("HomePageController") as UIViewController
             window?.rootViewController = vc
             
         }
