@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -8,11 +8,10 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="instacool" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="cIh-A8-N2K"/>
+                        <viewControllerLayoutGuide type="bottom" id="tCe-WD-x6E"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -28,18 +27,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRu-yO-qg6">
-                                <rect key="frame" x="124" y="256" width="51" height="30"/>
-                                <state key="normal" title="Sign in "/>
-                                <connections>
-                                    <action selector="onSignin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Avl-wm-CwF"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8w-qy-muG">
-                                <rect key="frame" x="124" y="315" width="50" height="30"/>
-                                <state key="normal" title="sign up"/>
+                                <rect key="frame" x="129" y="293" width="50" height="30"/>
+                                <state key="normal" title="SignUp"/>
                                 <connections>
                                     <action selector="onSignup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eks-K0-8X6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRu-yO-qg6">
+                                <rect key="frame" x="131" y="255" width="38" height="30"/>
+                                <state key="normal" title="LogIn"/>
+                                <connections>
+                                    <action selector="onSignin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Avl-wm-CwF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -49,30 +48,149 @@
                     <connections>
                         <outlet property="passwordField" destination="hTQ-x1-3Hn" id="eGx-T3-kza"/>
                         <outlet property="usernameField" destination="yKT-vC-eQC" id="pXm-yG-d3j"/>
-                        <segue destination="4nm-gC-K3J" kind="presentation" identifier="loginSegue" id="UdJ-Oc-6Rj"/>
+                        <segue destination="lx7-On-6gQ" kind="modal" identifier="loginSegue" id="xTO-Re-bgM"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="309" y="259"/>
+            <point key="canvasLocation" x="-1" y="59"/>
         </scene>
-        <!--Home Page View Controller-->
-        <scene sceneID="iji-aF-aaB">
+        <!--Profile-->
+        <scene sceneID="Jw8-YJ-qi4">
             <objects>
-                <viewController storyboardIdentifier="HomePageController" id="4nm-gC-K3J" customClass="HomePageViewController" customModule="instacool" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YnJ-3t-aTx" customClass="ProfileViewController" customModule="instacool" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="h9r-0E-AV7"/>
-                        <viewControllerLayoutGuide type="bottom" id="kAq-jI-0JI"/>
+                        <viewControllerLayoutGuide type="top" id="J3l-pK-gvT"/>
+                        <viewControllerLayoutGuide type="bottom" id="yke-Q1-kEm"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="weM-qC-W8j">
+                    <view key="view" contentMode="scaleToFill" id="rPi-vF-RwE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6e-Sy-gTm">
+                                <rect key="frame" x="136" y="269" width="48" height="30"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="OnLogout:" destination="YnJ-3t-aTx" eventType="touchUpInside" id="cpP-fW-zl7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="user" id="hYq-vO-38O"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="returnLoginSegue" id="EBh-Mf-Xup"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kVJ-3C-5IQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0em-rr-mfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="648" y="259"/>
+            <point key="canvasLocation" x="457" y="751"/>
+        </scene>
+        <!--Upload-->
+        <scene sceneID="EdR-QC-jrN">
+            <objects>
+                <viewController id="rfb-9X-LbI" customClass="UploadViewController" customModule="instacool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IeV-K0-sEb"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Am-Wa-Iv6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bin-zr-gKd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="       Touch Here To Upload " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scu-4a-Xdf">
+                                <rect key="frame" x="48" y="55" width="240" height="205"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="By4-Yj-x5W">
+                                <rect key="frame" x="48" y="55" width="240" height="205"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1f1-nJ-8rY">
+                                <rect key="frame" x="136" y="407" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmit:" destination="rfb-9X-LbI" eventType="touchUpInside" id="VGZ-Xo-Pml"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xGH-qE-j8n">
+                                <rect key="frame" x="48" y="293" width="240" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Upload" image="upload_to_cloud" id="imj-6Q-4M9"/>
+                    <connections>
+                        <outlet property="commentTextField" destination="xGH-qE-j8n" id="FFe-Ub-5rH"/>
+                        <outlet property="posterImageView" destination="By4-Yj-x5W" id="SE7-3D-850"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zfq-zA-4lc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992" y="373"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="QmU-gJ-R21">
+            <objects>
+                <viewController storyboardIdentifier="HomePageController" id="LVF-91-cr9" customClass="HomePageViewController" customModule="instacool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dCM-F6-deH"/>
+                        <viewControllerLayoutGuide type="bottom" id="36j-82-7Ma"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N2S-Uv-Htv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="248" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="noV-1X-jpP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="575"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="248" id="5kI-zn-5YZ">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="248"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5kI-zn-5YZ" id="Lhc-Mn-bgT">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="247.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home_automation" id="5al-ll-uY4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7KA-H1-CJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992" y="-250"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tqI-OS-Roo">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="lx7-On-6gQ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="cev-Zp-zyI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LVF-91-cr9" kind="relationship" relationship="viewControllers" id="3GN-Cc-DZr"/>
+                        <segue destination="rfb-9X-LbI" kind="relationship" relationship="viewControllers" id="YoB-E5-ZV8"/>
+                        <segue destination="YnJ-3t-aTx" kind="relationship" relationship="viewControllers" id="xeE-Xk-5ZL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="koU-js-6Ph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="368" y="45"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home_automation" width="25" height="25"/>
+        <image name="upload_to_cloud" width="25" height="25"/>
+        <image name="user" width="25" height="25"/>
+    </resources>
 </document>

@@ -26,29 +26,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         )
         
         // setup parse keys
-        Parse.setApplicationId("instacool", clientKey: "aksdjkfhjaksdfjh198347382974*&^&*GHGHJF")
+        //Parse.setApplicationId("instacool", clientKey: "aksdjkfhjaksdfjh198347382974*&^&*GHGHJF")
         
         // check if user is logged in.
         if PFUser.currentUser() != nil {
             // if there is a logged in user then load the home view controller
-            let vc = storyboard.instantiateViewControllerWithIdentifier("HomePageController") as UIViewController
+            let vc = storyboard.instantiateViewControllerWithIdentifier("TabBarController") as UIViewController
             window?.rootViewController = vc
             
         }
-        
-        
-//        
-//        if User.currentUser != nil {
-//            // Go to the logged in screen
-//            print("current user detected : \(User.currentUser?.name)")
-//            
-//            var vc = storyboard.instantiateViewControllerWithIdentifier("TweetsViewController") as UIViewController
-//            
-//            window?.rootViewController = vc
-//        }
-//
-
-        
+                
         return true
     }
 

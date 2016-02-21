@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		13C249D3153E957623084551 /* Pods_instacool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8ACCC6F60E254CA1DBA0B8 /* Pods_instacool.framework */; };
+		2CD490151C7A66CE004B5282 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD490141C7A66CE004B5282 /* ProfileViewController.swift */; };
+		2CD490171C7A66EE004B5282 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD490161C7A66EE004B5282 /* UploadViewController.swift */; };
 		2CFBE74B1C73EAF40073A404 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBE74A1C73EAF40073A404 /* AppDelegate.swift */; };
 		2CFBE74D1C73EAF40073A404 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBE74C1C73EAF40073A404 /* ViewController.swift */; };
 		2CFBE7501C73EAF40073A404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFBE74E1C73EAF40073A404 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		1A8ACCC6F60E254CA1DBA0B8 /* Pods_instacool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instacool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD490141C7A66CE004B5282 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2CD490161C7A66EE004B5282 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		2CFBE7471C73EAF40073A404 /* instacool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instacool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFBE74A1C73EAF40073A404 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CFBE74C1C73EAF40073A404 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +79,6 @@
 				2CFBE7511C73EAF40073A404 /* Assets.xcassets */,
 				2CFBE7531C73EAF40073A404 /* LaunchScreen.storyboard */,
 				2CFBE7561C73EAF40073A404 /* Info.plist */,
-				2CFBE75E1C73F8EA0073A404 /* HomePageViewController.swift */,
 			);
 			path = instacool;
 			sourceTree = "<group>";
@@ -84,6 +87,9 @@
 			isa = PBXGroup;
 			children = (
 				2CFBE75C1C73F0320073A404 /* LoginViewController.swift */,
+				2CFBE75E1C73F8EA0073A404 /* HomePageViewController.swift */,
+				2CD490141C7A66CE004B5282 /* ProfileViewController.swift */,
+				2CD490161C7A66EE004B5282 /* UploadViewController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -235,6 +241,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD490151C7A66CE004B5282 /* ProfileViewController.swift in Sources */,
+				2CD490171C7A66EE004B5282 /* UploadViewController.swift in Sources */,
 				2CFBE75F1C73F8EA0073A404 /* HomePageViewController.swift in Sources */,
 				2CFBE75D1C73F0320073A404 /* LoginViewController.swift in Sources */,
 				2CFBE74D1C73EAF40073A404 /* ViewController.swift in Sources */,

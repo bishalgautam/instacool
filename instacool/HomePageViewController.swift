@@ -8,12 +8,17 @@
 
 import UIKit
 
-class HomePageViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
+class HomePageViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate{
+    //, UITableViewDataSource,UITableViewDelegate
+    var vc: UIImagePickerController!
     
-
-
+    @IBOutlet weak var PosterImageView: UIImageView!
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+         
+        
 
         // Do any additional setup after loading the view.
     }
@@ -23,16 +28,36 @@ class HomePageViewController: UIViewController, UITableViewDataSource,UITableVie
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 20
-        
+    func imagePickerController(picker: UIImagePickerController,
+        didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+            let originalImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+            let editedImage = info[UIImagePickerControllerEditedImage] as! UIImage
+            PosterImageView.image = editedImage
+            dismissViewControllerAnimated(true, completion: { () -> Void in
+            })
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        
-                 
-        
+    @IBAction func onsubmit(sender: AnyObject) {
+       let  vc = UIImagePickerController()
+        vc.delegate = self
+        vc.allowsEditing = true
+        vc.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        self.presentViewController(vc,animated: true, completion: nil)
     }
+//    
+//    @IBAction func onLogout(sender: UIButton) {
+//        
+//    }
+//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+//        return 20
+//        
+//    }
+//    
+//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+//        
+//        
+//        
+//    }
     /*
     // MARK: - Navigation
 
