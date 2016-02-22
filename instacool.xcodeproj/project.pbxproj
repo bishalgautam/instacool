@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13C249D3153E957623084551 /* Pods_instacool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8ACCC6F60E254CA1DBA0B8 /* Pods_instacool.framework */; };
+		2C7066AA1C7A8A8C000EBE5C /* ContentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7066A91C7A8A8C000EBE5C /* ContentViewCell.swift */; };
 		2CD490151C7A66CE004B5282 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD490141C7A66CE004B5282 /* ProfileViewController.swift */; };
 		2CD490171C7A66EE004B5282 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD490161C7A66EE004B5282 /* UploadViewController.swift */; };
 		2CFBE74B1C73EAF40073A404 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFBE74A1C73EAF40073A404 /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		1A8ACCC6F60E254CA1DBA0B8 /* Pods_instacool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instacool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C7066A91C7A8A8C000EBE5C /* ContentViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewCell.swift; sourceTree = "<group>"; };
 		2CD490141C7A66CE004B5282 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2CD490161C7A66EE004B5282 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		2CFBE7471C73EAF40073A404 /* instacool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instacool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +81,7 @@
 				2CFBE7511C73EAF40073A404 /* Assets.xcassets */,
 				2CFBE7531C73EAF40073A404 /* LaunchScreen.storyboard */,
 				2CFBE7561C73EAF40073A404 /* Info.plist */,
+				2C7066A91C7A8A8C000EBE5C /* ContentViewCell.swift */,
 			);
 			path = instacool;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				2CFBE75D1C73F0320073A404 /* LoginViewController.swift in Sources */,
 				2CFBE74D1C73EAF40073A404 /* ViewController.swift in Sources */,
 				2CFBE7631C75044D0073A404 /* UserMedia.swift in Sources */,
+				2C7066AA1C7A8A8C000EBE5C /* ContentViewCell.swift in Sources */,
 				2CFBE74B1C73EAF40073A404 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

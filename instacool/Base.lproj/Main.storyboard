@@ -94,7 +94,7 @@
                         <viewControllerLayoutGuide type="top" id="IeV-K0-sEb"/>
                         <viewControllerLayoutGuide type="bottom" id="7Am-Wa-Iv6"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Bin-zr-gKd">
+                    <view key="view" contentMode="scaleAspectFill" id="Bin-zr-gKd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -105,7 +105,7 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="By4-Yj-x5W">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="By4-Yj-x5W">
                                 <rect key="frame" x="48" y="55" width="240" height="205"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1f1-nJ-8rY">
@@ -149,13 +149,28 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="575"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="248" id="5kI-zn-5YZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="contentViewCell" rowHeight="248" id="5kI-zn-5YZ" customClass="ContentViewCell" customModule="instacool" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="248"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5kI-zn-5YZ" id="Lhc-Mn-bgT">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="247.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Caption " textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhx-nk-tCr">
+                                                    <rect key="frame" x="9" y="218" width="92" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="58J-zC-FBc">
+                                                    <rect key="frame" x="27" y="19" width="267" height="191"/>
+                                                </imageView>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="myCaptionLabel" destination="Rhx-nk-tCr" id="oWC-1I-RVu"/>
+                                            <outlet property="posterView" destination="58J-zC-FBc" id="UCC-hd-SNa"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -163,6 +178,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home_automation" id="5al-ll-uY4"/>
+                    <connections>
+                        <outlet property="tableView" destination="noV-1X-jpP" id="6e8-LQ-DUh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7KA-H1-CJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

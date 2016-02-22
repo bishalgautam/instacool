@@ -35,6 +35,7 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
         // Dispose of any resources that can be recreated.
     }
     
+    
 
     @IBAction func onSubmit(sender: AnyObject) {
         UserMedia.postUserImage(posterImageView.image, withCaption: commentTextField.text) { (success: Bool, error: NSError?) -> Void in
@@ -50,6 +51,17 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
         }
 
         
+    }
+    func resize(image: UIImage, newSize: CGSize) -> UIImage {
+        let resizeImageView = UIImageView(frame: CGRectMake(0, 0, newSize.width, newSize.height))
+        resizeImageView.contentMode = UIViewContentMode.ScaleAspectFill
+        resizeImageView.image = image
+        
+        UIGraphicsBeginImageContext(resizeImageView.frame.size)
+        resizeImageView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage
     }
     
     func onCustomTap(sender: UITapGestureRecognizer) {
