@@ -20,7 +20,7 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
         var imageView = posterImageView
         
         // Optionally set the number of required taps, e.g., 2 for a double click
-        tapGestureRecognizer.numberOfTapsRequired = 2;
+        tapGestureRecognizer.numberOfTapsRequired = 1;
         
         // Attach it to a view of your choice. If it's a UIImageView, remember to enable user interaction
         imageView.userInteractionEnabled = true

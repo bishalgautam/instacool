@@ -123,7 +123,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Upload" image="upload_to_cloud" id="imj-6Q-4M9"/>
+                    <tabBarItem key="tabBarItem" title="Upload" image="instagram" id="imj-6Q-4M9"/>
                     <connections>
                         <outlet property="commentTextField" destination="xGH-qE-j8n" id="FFe-Ub-5rH"/>
                         <outlet property="posterImageView" destination="By4-Yj-x5W" id="SE7-3D-850"/>
@@ -177,7 +177,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home_automation" id="5al-ll-uY4"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="settings" id="5al-ll-uY4"/>
                     <connections>
                         <outlet property="tableView" destination="noV-1X-jpP" id="6e8-LQ-DUh"/>
                     </connections>
@@ -207,8 +207,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="home_automation" width="25" height="25"/>
-        <image name="upload_to_cloud" width="25" height="25"/>
+        <image name="instagram" width="25" height="25"/>
+        <image name="settings" width="25" height="25"/>
         <image name="user" width="25" height="25"/>
     </resources>
 </document>
